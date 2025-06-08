@@ -1,12 +1,9 @@
 package com.interview;
-
 public class ReverseOfWordsInSentance {
-
 	public static void main(String[] args) {
-	String original = "My name is xyz";
+	String original = "My name is xyz".toLowerCase();
 	System.out.println("Original String:	"+original);
-	String revrese = reverseOfString(original);
-	System.out.println("Reverse String:		"+revrese);
+	System.out.println("Reverse String:		"+reverseOfString(original));
 	}
 	static String reverseOfString(String input) {
 		String revrese = " ";
@@ -14,9 +11,6 @@ public class ReverseOfWordsInSentance {
 		for(String word : words) {
 			revrese = revrese + new StringBuilder(word).reverse().append(" ").toString();
 		}
-		
 		return revrese.trim();
 	}
-	
-
 }
