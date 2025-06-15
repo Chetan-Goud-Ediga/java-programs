@@ -1,8 +1,4 @@
-// Online Java Compiler
-// Use this editor to write, compile and run your Java code online
-
 package com.interview.questions;
-
 public class CharacterSeparator {
     public static void main(String[] args) {
         String input = "Hello@123#World!";  // Sample input
